@@ -15,21 +15,12 @@ A free, lightweight alternative to ScopeBox.
 - **Skin Tone mode** — Vectorscope-style color cast detection (neutral, green, magenta)
 - **Face detection** — Automatic analysis suggestions when faces are detected
 - **Always-on-top** — Keep the preview visible while you work
-- **Live config** — Tweak thresholds without restarting
 
 ## Download
 
 **macOS** (Big Sur+): [Download .app](https://github.com/davidvandriel/skinscope/releases/latest)
 
 **Windows** (10+): [Download .exe](https://github.com/davidvandriel/skinscope/releases/latest)
-
-Or run from source:
-```bash
-git clone https://github.com/davidvandriel/skinscope.git
-cd skinscope
-pip install -r requirements.txt
-python3 main.py
-```
 
 ## Quick Start
 
@@ -53,12 +44,14 @@ python3 main.py
 | Cmd/Ctrl+T | Toggle always-on-top |
 | Cmd/Ctrl+Q | Quit |
 
-## Configuration
+## Building from Source
 
-Edit these JSON files while the app is running—changes apply immediately:
-
-- `skinscope/processing/false_color_config.json` — Exposure thresholds
-- `skinscope/processing/skin_tone_config.json` — Color cast sensitivity
+```bash
+git clone https://github.com/davidvandriel/skinscope.git
+cd skinscope
+pip install -r requirements.txt
+python3 main.py
+```
 
 ## License
 
